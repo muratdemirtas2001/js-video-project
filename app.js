@@ -5,7 +5,7 @@
 const btn = document.querySelector(".switch-btn");
 // console.log(btn);
 const video = document.querySelector(".video-container");
-console.log(video);
+// console.log(video);
 btn.addEventListener("click", () => {
   if (!btn.classList.contains("slide")) {
     btn.classList.add("slide");
@@ -14,4 +14,10 @@ btn.addEventListener("click", () => {
     btn.classList.remove("slide");
     video.play();
   }
+});
+
+//preloader
+const preLoader = document.querySelector(".preloader");
+window.addEventListener("load", () => {
+  preLoader.classList.add("hide-preloader");
 });
